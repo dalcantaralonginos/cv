@@ -11689,6 +11689,15 @@ pre .code {
     object-fit: cover !important;
     border-radius: 50% !important;
 }
+/* ===== FOTO PERFIL NAVBAR ===== */
+.navbar .brand img,
+.navbar .foto-perfil {
+    width: 120px !important;
+    height: 120px !important;
+    object-fit: cover !important;
+    border-radius: 50% !important;
+}
+
 
 }
 
