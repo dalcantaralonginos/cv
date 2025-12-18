@@ -11682,3 +11682,10 @@ pre .code {
   display: block;
   margin-top: 10px;
 }
+.foto-perfil {
+    width: 120px;        /* tamaño */
+    height: 120px;       /* tamaño */
+    object-fit: cover;   /* recorta sin deformar */
+    border-radius: 50%;  /* círculo */
+}
+
