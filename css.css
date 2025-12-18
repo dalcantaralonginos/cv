@@ -11682,11 +11682,13 @@ pre .code {
   display: block;
   margin-top: 10px;
 }
-.foto-perfil {
-    width: 120px;
-    height: 120px;
-    object-fit: cover;
-    border-radius: 50%;
-    display: block;
+/* ===== FORZAR FOTO PERFIL ===== */
+.navbar .foto-perfil {
+    width: 120px !important;
+    height: 120px !important;
+    object-fit: cover !important;
+    border-radius: 50% !important;
+}
+
 }
 
