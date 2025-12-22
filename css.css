@@ -20,7 +20,7 @@ body {
 
 /* HEADER */
 .header {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -28,24 +28,24 @@ body {
 
 .card {
     background: var(--card);
-    padding: 50px;
+    padding: 45px;
     border-radius: 25px;
     text-align: center;
+    max-width: 520px;
     box-shadow: 0 25px 50px rgba(0,0,0,0.7);
-    animation: fadeIn 1.5s ease;
 }
 
 /* FOTO */
 .profile-img {
-    width: 160px;
-    height: 160px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     object-fit: cover;
     border: 4px solid var(--accent);
-    box-shadow: 0 0 30px rgba(0,229,255,0.8);
+    box-shadow: 0 0 25px rgba(0,229,255,0.7);
 }
 
-/* TITULOS */
+/* TEXTOS */
 h1 {
     color: var(--accent);
     margin-top: 15px;
@@ -58,18 +58,18 @@ h2 {
 
 h3 {
     color: var(--soft);
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 
-/* BOTONES */
-.buttons {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
+p {
+    font-size: 0.95rem;
 }
 
+/* BOTÓN */
 .btn {
-    padding: 12px 30px;
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 28px;
     background: linear-gradient(45deg, var(--accent), var(--soft));
     color: #000;
     border-radius: 30px;
@@ -77,17 +77,15 @@ h3 {
     font-weight: bold;
 }
 
-.btn-outline {
-    background: transparent;
-    border: 2px solid var(--accent);
-    color: var(--accent);
+/* CONTENIDO */
+.main {
+    padding: 40px 20px;
 }
 
-/* SECCIONES */
 .section {
     max-width: 900px;
-    margin: 60px auto;
-    padding: 40px;
+    margin: 40px auto;
+    padding: 35px;
     background: var(--card);
     border-radius: 20px;
     box-shadow: 0 15px 30px rgba(0,0,0,0.6);
@@ -108,37 +106,34 @@ h3 {
 }
 
 /* SKILLS */
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .skills span {
-    display: inline-block;
     background: #0b2b33;
-    margin: 8px;
-    padding: 10px 20px;
+    padding: 8px 18px;
     border-radius: 20px;
-}
-
-/* PORTAFOLIO */
-.portfolio {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-}
-
-.project {
-    background: #0b2b33;
-    padding: 30px;
-    text-align: center;
-    border-radius: 15px;
+    margin: 6px;
+    font-size: 0.85rem;
 }
 
 /* FOOTER */
 footer {
     text-align: center;
-    padding: 30px;
+    padding: 25px;
     color: #aaa;
 }
 
-/* ANIMACIÓN */
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(30px); }
-    to { opacity: 1; transform: translateY(0); }
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .card {
+        padding: 35px;
+    }
+
+    .profile-img {
+        width: 120px;
+        height: 120px;
+    }
 }
