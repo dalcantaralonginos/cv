@@ -2,78 +2,150 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Currículum | Daniel Alcantara</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css.css">
+    <title>CV | Daniel Alcantara</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- ICONOS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/themify-icons@0.1.2/css/themify-icons.css">
+
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css">
+
+    <!-- CSS PERSONAL -->
+    <link rel="stylesheet" href="css.css">
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#navbar" data-offset="70">
 
-<header class="header">
-    <div class="card">
-        <img src="dani.jpg" alt="Daniel Alcantara" class="profile-img">
-        <h1>Daniel Alcantara</h1>
-        <h3>C. E. O. | Brazzers Toys Tecnology</h3>
+<!-- HEADER -->
+<header class="header d-flex align-items-center">
+    <div class="container text-center">
+        <img src="dani.jpg" alt="Daniel Alcantara" class="foto-perfil mb-4">
 
-        <div class="buttons">
-            <a href="#perfil" class="btn">Perfil</a>
-            <a href="cv.pdf" class="btn btn-outline" download>Descargar CV</a>
+        <h4 class="header-subtitle">Hola, soy</h4>
+        <h1 class="header-title">Daniel Alcantara</h1>
+        <h6 class="header-mono">
+            C. E. O. | Brazzers Toys Tecnology
+        </h6>
+
+        <div class="mt-4">
+            <a href="#about" class="btn btn-primary btn-rounded mr-2">
+                <i class="ti-user pr-2"></i>Perfil
+            </a>
+            <a href="cv.pdf" class="btn btn-outline-light btn-rounded" download>
+                <i class="ti-download pr-2"></i>Descargar CV
+            </a>
         </div>
     </div>
 </header>
 
-<section id="perfil" class="section">
-    <h2>Perfil Profesional</h2>
-    <p>
-        Profesional enfocado en liderazgo, gestión estratégica y desarrollo de
-        proyectos tecnológicos. Experiencia en toma de decisiones, trabajo en
-        equipo y crecimiento organizacional.
-    </p>
-</section>
+<!-- NAVBAR -->
+<nav id="navbar" class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container">
 
-<section class="section dark">
-    <h2>Información Personal</h2>
-    <ul class="info">
-        <li><span>Fecha de nacimiento:</span> 23/10/2003</li>
-        <li><span>Correo:</span> uriellonginos36@gmail.com</li>
-        <li><span>Teléfono:</span> 7225354607</li>
-        <li><span>Dirección:</span> San Pedro Arriba</li>
-    </ul>
-</section>
+        <a class="navbar-brand" href="#home">
+            <img src="dani.jpg" class="foto-perfil-sm" alt="Daniel">
+            Daniel Alcantara
+        </a>
 
-<section class="section">
-    <h2>Habilidades</h2>
-    <div class="skills">
-        <span>✔ Liderazgo</span>
-        <span>✔ Trabajo en equipo</span>
-        <span>✔ Gestión de proyectos</span>
-        <span>✔ Comunicación efectiva</span>
-        <span>✔ Toma de decisiones</span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#about">Acerca de mí</a></li>
+                <li class="nav-item"><a class="nav-link" href="#skills">Habilidades</a></li>
+                <li class="nav-item"><a class="nav-link" href="#experience">Experiencia</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+    <div class="container">
+        <div class="row justify-content-center">
+
+            <div class="col-lg-8 about-card text-center">
+                <h3>¿Quién soy?</h3>
+                <span class="line"></span>
+                <p>
+                    Soy el C. E. O. de la empresa Brazzers Toys Tecnology.
+                    Me encargo de liderar proyectos, tomar decisiones estratégicas
+                    y coordinar equipos para el crecimiento de la organización.
+                </p>
+            </div>
+
+        </div>
     </div>
 </section>
 
-<section class="section dark">
-    <h2>Experiencia</h2>
-    <h4>C. E. O. – Brazzers Toys Tecnology</h4>
-    <p>
-        Dirección general de la empresa, supervisión de proyectos, planeación
-        estratégica y coordinación de equipos.
-    </p>
-</section>
+<!-- SKILLS -->
+<section id="skills" class="section dark">
+    <div class="container">
+        <h3 class="text-center">Habilidades</h3>
+        <span class="line mx-auto mb-4"></span>
 
-<section class="section">
-    <h2>Portafolio</h2>
-    <div class="portfolio">
-        <div class="project">Proyecto Empresarial</div>
-        <div class="project">Gestión Tecnológica</div>
-        <div class="project">Planeación Estratégica</div>
+        <div class="row text-center">
+            <div class="col-md-4 skill">Liderazgo</div>
+            <div class="col-md-4 skill">Trabajo en equipo</div>
+            <div class="col-md-4 skill">Gestión de proyectos</div>
+            <div class="col-md-4 skill">Toma de decisiones</div>
+            <div class="col-md-4 skill">Comunicación efectiva</div>
+            <div class="col-md-4 skill">Pensamiento estratégico</div>
+        </div>
     </div>
 </section>
 
-<footer>
-    <p>© 2025 Daniel Alcantara | CV Profesional</p>
+<!-- EXPERIENCE -->
+<section id="experience" class="section">
+    <div class="container">
+        <h3 class="text-center">Experiencia</h3>
+        <span class="line mx-auto mb-4"></span>
+
+        <div class="about-card">
+            <h5>C. E. O. – Brazzers Toys Tecnology</h5>
+            <p>
+                Liderazgo general de la empresa durante más de 15 años,
+                supervisando proyectos, planeación estratégica y crecimiento
+                organizacional mediante la toma de decisiones clave.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section dark">
+    <div class="container">
+        <h3 class="text-center">Contacto</h3>
+        <span class="line mx-auto mb-4"></span>
+
+        <ul class="info text-center list-unstyled">
+            <li><span>Correo:</span> uriellonginos36@gmail.com</li>
+            <li><span>Teléfono:</span> 7225354607</li>
+            <li><span>Ubicación:</span> Estado de México</li>
+        </ul>
+
+        <div class="social-icons text-center mt-4">
+            <a href="#" class="social-link"><i class="ti-facebook"></i></a>
+            <a href="#" class="social-link"><i class="ti-instagram"></i></a>
+            <a href="#" class="social-link"><i class="ti-github"></i></a>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer text-center">
+    <p>© 2025 Daniel Alcantara · CV Profesional</p>
 </footer>
 
-<script src="./script.js"></script>
+<!-- SCRIPTS -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+
 </body>
 </html>
