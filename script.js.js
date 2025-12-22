@@ -1,11 +1,7 @@
-// Scroll suave para el menú
-$('a.nav-link').on('click', function (e) {
-    if (this.hash !== '') {
+document.querySelectorAll('a[href^="#"]').forEach(link => {
+    link.addEventListener('click', e => {
         e.preventDefault();
-        const hash = this.hash;
-
-        $('html, body').animate({
-            scrollTop: $(hash).offset().top - 70
-        }, 800);
-    }
+        document.querySelector(link.getAttribute('href'))
+            .scrollIntoView({ behavior: 'smooth' });
+    });
 });
